@@ -7,7 +7,6 @@ print(' ****   *   *  *   *    *   \n'
       '*    *  *   *  *   *  *   *')
 
 
-
 x = float(input('Введите X \n'))
 y = float(input('Введите У \n'))
 
