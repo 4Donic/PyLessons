@@ -21,8 +21,8 @@ print('Escape sequences\n'
 
 # №6
 print("Задание 6")
-x = int(input('Введите X \n'))
-y = int(input('Введите У \n'))
+x = int(input('Введите натуральное число X \n'))
+y = int(input('Введите натуральное число У \n'))
 print(x, y)
 summ = x + y
 print("Сумма этих чисел =", summ)
