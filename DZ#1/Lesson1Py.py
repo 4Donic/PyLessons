@@ -29,5 +29,5 @@ print("Сумма этих чисел =", summ)
 div = x // y
 ost = x % y  # (div * y - x)*-1
 print("Х, целоделенный на У =", div, '\n' "Остаток от деления =", ost)
-step = x ** y
+step = y ** x
 print("Х в степени У =", step)
