@@ -8,3 +8,9 @@ for i in range(0, size):
         # printing full Triangle pyramid using stars
         print("* ", end='')
     print()
+
+# for i in range(ver):
+#     print(i+1, end='\t')
+#     for j in range(1,1+i):
+#         print('* ', end='')
+#     print("\n", end='')
