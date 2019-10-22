@@ -9,7 +9,7 @@
 #      0            4               9
 lst = [5, 8, 47, 1, 6, 8, 4, 0, 56, 4]
 k = n = int(input("Введите индекс: "))
-C = 444  # int(input("Введите значение"))
+C = int(input("Введите значение"))
 posl = lst[-1]
 print("START :", lst)
 for number in lst[k:-1]:
