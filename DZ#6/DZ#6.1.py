@@ -7,7 +7,6 @@ lst = [4, 7, 2, 0, 7, 4, 5, 8, 2, 3, 7]
 big = 0
 idx = 0
 for number in lst[1:-1]:
-    print(number, end="")
     idx += 1
     if lst[idx-1]+lst[idx+1] < number:
         big += 1
