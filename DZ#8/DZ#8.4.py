@@ -9,6 +9,7 @@ def bank(a, years):
     for y in range(years):
         a *= 1.1
     print("В итоге, на счету в гривнах будет ", round(a, 3))
+    return a
 
 
 a = int(input("Сколько гривен будет вклад в банк?\b"))
