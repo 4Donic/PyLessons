@@ -7,13 +7,13 @@
 
 def arithmetic(a, b, f):
     if f is '+':
-        return(a + b)
+        return a + b
     elif f is '-':
-        return(a - b)
+        return a - b
     elif f is '*':
-        return(a * b)
+        return a * b
     elif f is '/':
-        return(a / b)
+        return a / b
     else:
         print("Неизвестная операция")
 
