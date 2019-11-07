@@ -29,6 +29,7 @@ def sdvig(number, n, vpravo):
 
 
 x = 123456
+y = 1
 print(x)
-print(sdvig(x, 2, False))
-print(sdvig(x, 2, True))
+print(sdvig(x, y, False))
+print(sdvig(x, y, True))
