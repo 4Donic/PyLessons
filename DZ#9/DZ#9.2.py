@@ -12,22 +12,23 @@ def sdvig(number, n, vpravo):
     while n > 0:
         if vpravo:
             for i in range(len(numlist)):
-                k = 0
                 if i == 0:
-                    last = numlist[-1]
-                numlist[len(numlist)-1-i] = numlist[len(numlist)-2-i]
+                    last = numlist[0]
+                numlist[-i] = numlist[-1-i]
                 if i == len(numlist)-1:
-                    numlist[k] = last
+                    numlist[1] = last
         else:
             for i in range(len(numlist)):
-                k = len(numlist)-2
                 if i == 0:
                     pre_last = numlist[-1]
                 numlist[i - 1] = numlist[i]
                 if i == len(numlist) - 1:
-                    numlist[k] = pre_last
+                    numlist[i-1] = pre_last
         n -= 1
     return int(''.join(map(str, numlist)))
 
 
-print(sdvig(123456, 10, True))
+x = 123456
+print(x)
+print(sdvig(x, 2, False))
+print(sdvig(x, 2, True))
