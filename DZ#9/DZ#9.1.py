@@ -16,19 +16,17 @@ def systema(ch, syst):
         res.append(ch % syst)
         ch = ch // syst
     res.reverse()
-    leng = 0
-    for numb in res:
-        if numb > 9:
-            res[leng] = ascii_uppercase[numb - 10]
-        leng += 1
+    for numb in range(len(res)):
+        if res[numb] > 9:
+            res[numb] = ascii_uppercase[res[numb] - 10]
     res = ''.join(map(str, res))  # Переделка каждого значения в списке в стринг и их соединение
     return res
 
 # # # # # введенное число в введенную систему, или введенное число во все сразу.
 
 
-print(systema(int(input("Десятичное число: ")), int(input("Желаемая система исчисления"))))
+#print(systema(int(input("Десятичное число: ")), int(input("Желаемая система исчисления"))))
 
-# x = int(input("Десятичное число: "))
-# for i in range(2, 37):
-#     print("{sys}-ная система".format(sys=i), systema(x, i))
+x = int(input("Десятичное число: "))
+for i in range(2, 37):
+    print("{sys}-ная система".format(sys=i), systema(x, i))
