@@ -28,8 +28,8 @@ def sdvig(number, n, vpravo):
     return int(''.join(map(str, numlist)))
 
 
-x = 1234567890
+lst = 1234567890
 y = 3
-print(x)
-print(sdvig(x, y, False))
-print(sdvig(x, y, True))
+print(lst)
+print(sdvig(lst, y, False))
+print(sdvig(lst, y, True))
