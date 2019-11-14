@@ -50,5 +50,8 @@ for i in range(len(lst)):
     res1.append(summ[i])
     res.append(tuple(res1))
     res1 = []
-for i in range(len(res)):
-    print('Цена заказа №{} = {}'.format(res[i][0], res[i][1]))
+
+print(res)
+# Если надо по красоте :
+# for i in range(len(res)):
+#     print('Цена заказа №{} = {}'.format(res[i][0], res[i][1]))
