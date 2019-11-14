@@ -45,7 +45,7 @@ print(line, end='')
 res = []
 summ = list(map(lambda x: x[0] and round(x[2]*x[3], 2) if x[2]*x[3] > 100 else round(x[2]*x[3]+10, 2), lst))
 for i in range(len(lst)):
-    res1 = list()
+    res1 = []
     res1.append(lst[i][0])
     res1.append(summ[i])
     res.append(tuple(res1))
